@@ -28,3 +28,12 @@ This project is designed for **legacy environments**, **mixed CSS stacks**, and 
 - [ ] Multiple instances supported
 
 ---
+
+> **Note**
+>
+> This component was created to solve a very specific real-world use case.
+> In one project, Tailwind CSS was already part of the stack, but it was gradually misused:
+> extensive custom CSS, heavy configuration overrides, and frequent use of `!important` rules
+> caused many Tailwind utility classes to break or behave inconsistently.
+>
+> `tw-isolated` isolates Tailwind inside a Shadow DOM to prevent those conflicts and restore predictable utility behavior without requiring a full refactor of the existing codebase.
