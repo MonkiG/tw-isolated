@@ -1,12 +1,27 @@
 {
   "name": "tw-isolated",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "Tailwind CSS isolated inside Shadow DOM using Web Components.",
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "shadow-dom",
+    "web-components",
+    "custom-elements",
+    "css-isolation"
+  ],
   "type": "module",
+  "main": "dist/tw-isolated.js",
+  "module": "dist/tw-isolated.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": true,
   "scripts": {
     "dev": "vite playground",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "typescript": "~5.9.3",
